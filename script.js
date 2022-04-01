@@ -13,9 +13,9 @@ blimpar . desabilitado  =  verdadeiro ;
 real . desabilitado  =  verdadeiro ;
 dólar . desabilitado  =  verdadeiro ;
 
-função  ;confirmaTaxa ( )  ;{
+função;  confirmarTaxa ( )  ;{
   if  ( taxa . value  ===  '' )  {
-    return  alert ( 'Digite a taxa de conversão para continuar' ) ;
+    return  alert ( 'Informe a taxax de conversão' ) ;
   }
   taxa . desabilitado  =  verdadeiro ;
   bconfirmar . desabilitado  =  verdadeiro ;
@@ -25,7 +25,7 @@ função  ;confirmaTaxa ( )  ;{
   botaoRD . desabilitado  =  falso ;
   botaoDR . desabilitado  =  falso ;
 }
-função  ;limpar ( )  ;{
+função;  limpar ( )  ;{
   taxa . valor  =  '' ;
   bconfirmar . desabilitado  =  falso ;
   botaoRD . desabilitado  =  verdadeiro ;
@@ -34,13 +34,13 @@ função  ;limpar ( )  ;{
   real . valor  =  '' ;
   dólar . valor  =  '' ;
 }
-função  ;conversorRD ( )  ;{
+função;  conversorRD ( )  ;{
   deixe  ;dolares  =  0 ;
   dólares  =  reais . valor  /  taxa . valor ;
   consolo . log ( dolares ) ;
   alerta  ( dolares  +  'dolares' ) ;
 }
-função  ;conversorDR ( )  ;{
+função;  conversorDR ( )  ;{
   deix  ;real  =  0 ;
   real  =  dólar . valor  *  taxa . valor ;
   consolo . log ( real ) ; 
